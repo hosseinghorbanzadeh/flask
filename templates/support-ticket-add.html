@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/support-ticket-add.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>پنل کاربری</title>
+
+
+
+</head>
+
+<body>
+    <div class="main">
+
+        <nav class="main-menu">
+            <ul class="items">
+                <li>
+                    <i class="fa fa-address-card"></i><a href="#">پنل کاربری</a>
+                </li>
+                <li>
+                    <i class="fas fa-edit"></i><a href="#">ویرایش پروفایل</a>
+                </li>
+                <li>
+                    <i class="fas fa-download"></i><a href="#">دانلودها</a>
+                </li>
+                <li>
+                    <i class="fas fa-heart"></i><a href="#">علاقه مندی ها</a>
+                </li>
+                <li>
+                    <i class="fas fa-history"></i><a href="#">تاریخچه سفارشات</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i><a href="#">ارسال تیکت پشتیبانی</a>
+                </li>
+                <li>
+                    <i class="fas fa-window-close"></i><a href="#">خروج</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+
+            <div class="user-image">
+                <img src="img/user-image.png">
+                <h2>پریا مدنی</h2>
+            </div>
+            <div class="notification">
+
+                <i class="fas fa-bell"></i>
+            </div>
+        </header>
+        <main class="content">
+            <h1 class="user-panel">درج تیکت</h1>
+            <div class="boxes">
+                <div class="box-items all-orders">
+                    <i class="fas fa-shopping-cart">
+                    </i>
+                    <div>
+                        <span>کل سفارشات</span>
+                        <h3>20</h3>
+                    </div>
+                </div>
+                <div class="box-items">
+                    <i class="fas fa-user">
+                    </i>
+                    <div>
+                        <span>سابقه عضویت</span>
+                        <h3>365روز</h3>
+                    </div>
+                </div>
+                <div class="box-items support-ticket">
+                    <i class="fas fa-envelope">
+                    </i>
+                    <div class="last">
+                        <span>مشاهده تیکت ها</span>
+                        <h3>5</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="add-support">
+                <form>
+
+                    <label for="description" class="description-label">برای درج تیکت لطفاً فرم زیرا تکمیل نمائید :</label>
+                    <div class="top-part">
+                        <label for="support-ticket-title" class="ticket-title">
+                            عنوان تیکت :</label>
+                        <input type="text" id="support-ticket-title" name="title">
+
+                        <label for="support-part-title" class="title-part2">عنوان بخش پشتیبانی</label>
+
+                        <input type="text" id="support-part-title"  name="part-title">
+
+
+
+                    </div>
+                    <div class="message">
+                        <label for="message-text" class="message-label">پیام شما</label>
+                        <textarea id="message-text" class="message-box"></textarea>
+                    </div>
+                    <div class="last-part">
+                    <div class="upload-part">
+                        <label for="upload-file-name" class="upload-label">آپلود فایل</label>
+                        <div class="upload-box">
+                        
+                        <i class="fa fa-add"></i>
+                        </div>  
+                        
+                        </div>
+                             <div class="send-part">
+                        <input type="submit" value="ارسال" class="submit-button">
+                            
+                        </div>
+                    
+                    </div>
+                </form>
+
+            </div>
+
+
+
+        </main>
+
+
+
+
+    </div>
+
+</body>
+
+
+
+</html>

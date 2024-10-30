@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/panelStyle.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>پنل کاربری</title>
+
+
+
+</head>
+
+<body>
+    <div class="main">
+
+        <nav class="main-menu">
+            <ul class="items">
+                <li>
+                    <i class="fa fa-address-card"></i><a href="#">پنل کاربری</a>
+                </li>
+                <li>
+                    <i class="fas fa-plane"></i><a href="#"> درخواست بلیت هواپیما</a>
+                </li>
+                <li>
+                    <i class="fas fa-car"></i><a href="#">درخواست خودرو</a>
+                </li>
+                <li>
+                    <i class="fas fa-bed"></i><a href="#">درخواست اقامت  </a>
+                </li>
+                <li>
+                    <i class="fas fa-history"></i><a href="#">تاریخچه سفارشات</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i><a href="#">ارسال تیکت پشتیبانی</a>
+                </li>
+                <li>
+                    <i class="fas fa-window-close"></i><a href="#">خروج</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+        
+        <div class="user-image">
+            <img src="../img/pic1.png">
+            <h2>{{em.name+' '+em.lastName}} </h2>
+            </div>
+            <div class="notification">
+            
+            <i class="fas fa-bell"></i>
+            </div>
+        </header>
+        <main class="content">
+            <div class="boxes1">
+                <h1 class="user-panel">نام پدر:{{em.fatherName}}</h1>
+                <h1 class="user-panel">تاریخ تولد:{{em.dateOfBirth}}</h1>
+                <h1 class="user-panel"> کد ملی:   {{em.meliCode}}</h1>
+                <h1 class="user-panel"> کد کارمندی:   {{em.id}}</h1>
+            </div>
+                
+ 
+        
+            <div class="boxes">
+            <div class="box-items all-orders">
+                <i class="fa fa-ticket">
+                </i>
+                <div>
+                <span>تعداد بلیت </span>
+                    <h3>20</h3>
+                </div>
+                </div>
+                  <div class="box-items all-orders">
+                <i class="fa fa-car">
+                </i>
+                <div>
+                <span>تعداد خودرو </span>
+                    <h3>635</h3>
+                </div>
+                </div>
+                  <div class="box-items support-ticket">
+                <i class="fa fa-bed">
+                </i>
+                <div class="last" >
+                <span> اقامت</span>
+                    <h3>5</h3>
+                </div>
+                </div>
+            
+            </div>
+         
+  
+
+      <div class="set-of-orders">
+            
+        <table width="100%">
+            <thead>
+            
+            <tr>
+                <td>سفارش</td>
+                <td>تاریخ</td>
+                <td>وضعیت</td>
+                <td>تعداد سفارش</td>
+                <td></td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><p>بلیت هواپیما</p></td>
+                <td><p>1398/10/02</p></td>
+                <td><p>لغو شده</p></td>
+                <td><p class="count">2</p></td>
+                <td class="show"><a href="#"><span>نمایش</span></a></td>
+                
+                </tr>
+                
+                  <tr>
+                <td><p>اقامت مشهد</p></td>
+                <td><p>1399/10/02</p></td>
+                <td><p>تکمیل شده</p></td>
+                <td><p class="count">3</p></td>
+                <td class="show"><a href="#"><span>نمایش</span></a></td>
+                
+                </tr>
+                  <tr>
+                <td><p>درخواست خودرو</p></td>
+                <td><p>1400/10/02</p></td>
+                <td><p>در حال بررسی</p></td>
+                <td><p class="count">2</p></td>
+                <td class="show"><a href="#"><span>نمایش</span></a></td>
+                
+                </tr>
+                  <tr>
+                <td><p>ماموریت</p></td>
+                <td><p>1400/11/02</p></td>
+                <td><p>تکمیل شده </p></td>
+                <td><p class="count">2</p></td>
+                <td class="show"><a href="#"><span>نمایش</span></a></td>
+                
+                </tr>
+                  <tr>
+                <td><p>کلاس اموزشی</p></td>
+                <td><p>1401/04/02</p></td>
+                <td><p>در حال انجام</p></td>
+                <td><p class="count">4</p></td>
+                <td class="show"><a href="#"><span>نمایش</span></a></td>
+                
+                </tr>
+            
+            </tbody>
+            
+            </table>
+        </div>
+            
+        <div class="pagination">
+            <span class="first active">1</span>
+                <span>2</span>
+                <i class="fa fa-angle-left"></i>
+    
+            </div>
+      
+        </main>
+        
+    </div>
+
+</body>
+
+
+
+</html>

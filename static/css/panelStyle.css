@@ -1,0 +1,344 @@
+
+@font-face{   
+    font-family:iranyekan;
+    src:url(../fonts/Yekan.eot) format('eot'),
+        url(../fonts/Yekan.woff2) format('woff2'),
+        url(../fonts/Yekan.woff) format('woff');
+    font-weight:normal;
+}
+
+@font-face{
+    
+    font-family:iranyekan;
+    src:url(../fonts/iranyekan/eot/iranyekanwebregular.eot) format('eot'),
+        url(../fonts/iranyekan/woff2/iranyekanwebregular.woff2) format('woff2'),
+        url(../fonts/iranyekan/woff/iranyekanwebregular.woff) format('woff');
+    font-weight:normal;
+}
+
+@font-face{
+    font-family:iranyekan;
+    src:url(../fonts/iranyekan/eot/iranyekanweblight.eot) format('eot'),
+        url(../fonts/iranyekan/woff2/iranyekanweblight.woff2) format('woff2'),
+        url(../fonts/iranyekan/woff/iranyekanweblight.woff) format('woff');
+    font-weight:500;
+    
+
+}
+@font-face{
+    font-family:iranyekan;
+    src:url(../fonts/iranyekan/eot/iranyekanwebbold.eot) format('eot'),
+        url(../fonts/iranyekan/woff2/iranyekanwebbold.woff2) format('woff2'),
+        url(../fonts/iranyekan/woff/iranyekanwebbold.woff) format('woff');
+    font-weight:bold;
+
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e5e7eb;
+    font-family: iranyekan;
+}
+.main{
+    width: 100%;
+}
+.main-menu{
+    
+    background: #272727;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 55px;
+    z-index: 1;
+}
+
+.main-menu .items{
+    margin-top: 40px;
+    margin-right: 22px;
+}
+.main-menu .items li{
+    list-style: none;
+    padding: 30px 0;
+  transition: 0.3s ease;
+}
+.main-menu .items li i{
+    color: #c1c1c1;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 15px;
+    float: right;
+}
+.main-menu .items li a{
+    text-decoration: none;
+    color: #c1c1c1;
+    font-weight: 400;
+    font-size: 16px;
+    float: right;
+    
+}
+
+.main-menu .items li:hover i,
+.main-menu .items li:hover a{
+    color: #f3f4f6;
+}
+.main-menu .items li:hover i{
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+.main-menu .items li:hover a{
+    transform: scale(1.1);
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    background: #f6f6f6;
+    border-bottom: 3px solid rgb(92,173,173);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 10px 0px;
+}
+header .user-image{
+    align-items: center;
+    width: 53%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+header .user-image img{
+    width: 40px;
+    height: 40px;
+    margin-right: 32px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+}
+
+header .user-image h2{
+    margin-right: 10px;
+    font-size: 22px;
+}
+header .notification{
+    width: 45%;
+    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+
+header .notification i{
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    position: fixed;
+    left: 0;
+    color: #000;
+}
+header .notification i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.content{
+    direction: rtl;
+    width: 80%;
+}
+.content h1.user-panel{
+    color: #444a53;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 90px 47px 50px 0px;
+    padding: 25px 35px 0px 30px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    width: 90%;
+    border-radius: 5px;
+    margin-right: 78px;
+}
+.boxes1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #828997;
+    width: 90%;
+    border-radius: 5px;
+    margin-right: 78px;
+}
+.boxes .box-items{
+    width: 32%;
+    padding: 15px 11px 15px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.boxes .box-items div{
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+.boxes .box-items div:not(.last){
+    border-left: 3px solid rgb(92,173,173);
+    padding: 5px 0px 5px 82px;
+}
+.boxes .box-items i{
+    font-size: 25px;
+    width: 70px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+.boxes .box-items:nth-child(1) i{
+    background: rgb(0,0,145);
+}
+.boxes .box-items:nth-child(2) i{
+    background: rgb(92,173,173);
+}
+.boxes .box-items:nth-child(3) i{
+    background: rgb(128,128,192);
+}
+
+.boxes .box-items h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.boxes .box-items span{
+    font-size: 15px;
+    color: #828997;
+    position: relative;
+    top: 15px;
+}
+.all-orders,
+.support-ticket{
+    transition: 0.3s;
+}
+
+.all-orders i:hover,
+.support-ticket i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.all-orders span:hover{
+    cursor: pointer;
+    color: rgb(0,0,145);
+}
+.support-ticket span:hover{
+    cursor: pointer;
+    color: rgb(85,85,192);
+}
+
+.set-of-orders{
+    width: 90%;
+    margin: 30px 78px 30px 30px;
+    background: #ffff;
+    border-radius: 5px;
+}
+.set-of-orders p:not(p.count){
+    font-size: 13px;
+    font-weight: 400;
+}
+.set-of-orders p.count{
+    font-size: 15px;
+    padding-right: 30px;
+}
+table{
+    border-collapse: collapse;
+}
+thead{
+    border-bottom: 2px solid rgba(193,193,225,0.3);
+    background: rgba(222,222,225,0.4);
+}
+thead td{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px;
+    padding-right: 20px;
+}
+
+tbody tr td{
+    padding: 20px;
+}
+tbody tr:nth-child(even){
+    background: rgba(222,222,225,0.3);
+}
+
+tbody .show a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0,120,179);
+}
+.show{
+    position: relative;
+}
+.show a::before{
+    
+    
+    content: '';
+    width: 53%;
+    height: 72%;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    transform: scaleX(0);
+    background: rgba(199,226,226,0.3);
+    border-radius: 50px;
+    transition: transform 0.5s ease;
+}
+.show a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.show a span:hover{
+    color: rgb(111,183,183);
+}
+
+.main .pagination{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    color: rgb(49,49,49);
+}
+
+.main .pagination span{
+    margin-left: 16px;
+}
+.pagination .first{
+    margin-right: 16px;
+}
+
+.pagination span.active{
+    color: rgb(92,173,173);
+    font-weight: 600;
+}
+
+.pagination span:not(.active):hover,
+.pagination i:hover{
+    cursor: pointer;
+    color: rgb(0,120,170);
+}
+
+
